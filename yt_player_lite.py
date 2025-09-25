@@ -5,7 +5,8 @@ import os
 from pytube import YouTube
 from pytube.exceptions import RegexMatchError, VideoUnavailable
 
-
+# to run this, you need to install pytube package
+# pip install pytube
 class YouTubeDownloaderGUI:
     def __init__(self, root):
         self.root = root
@@ -84,7 +85,7 @@ class YouTubeDownloaderGUI:
         progress_frame = ttk.LabelFrame(
             main_frame, text="Progress", padding="10")
         progress_frame.pack(fill=tk.BOTH, expand=True, pady=10)
-
+#made by gao le 
         self.progress_label = ttk.Label(
             progress_frame, text="Ready to download...")
         self.progress_label.pack(anchor=tk.W)
@@ -233,6 +234,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-# to run this, you need to install pytube package
-# pip install pytube
-# made by gao le
+
+
